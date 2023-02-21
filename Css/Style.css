@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(249, 249, 249, 0.7), rgba(200, 201, 203, 0.7));
+}
+
+/*------------Inicio de Navbar-------------*/
+header .navbar-nav a:hover{
+    background-color: rgb(99, 180, 193);
+    border-radius: 8px;
+}
+
+
+.logo{
+  pointer-events: none;
+}
+
+
+header nav{
+    z-index: 2;
+}
+
+header{
+    
+    background-image:linear-gradient(to right, rgba(45, 43, 43, 0.7), rgba(0, 0, 0, 0.7)), url("/Imagenes/Imagenfondo.jpg ");
+    background-size: cover;
+    background-position: 50% 40%;
+    position: relative;
+}
+
+.span{
+    color: rgb(99, 180, 193);
+    font-size: 30px;
+}
+
+/*------------Fin de Navbar-------------*/
+
+
+/* -----------Inico de Blog------------ */
+.linkcategorias{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado-categorias{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-------------- Fin Blog-------------*/
+
+
+/*---------- Inicio de video y comentarios-------*/
+.promo {
+    padding-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*--------Fin de video y comentarios---------*/
+
+
+
+/*------------Inicio de Footer-------------*/
+
+footer .redes{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(216, 238, 238);
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 30%;
+}
+/*------------Fin de Footer-------------*/
+
+
+/*----- Media Query para galaxy fold en galeria----*/
+
+@media screen and (max-width: 280px){ 
+    .moto-imagenes{
+        font-size: 10px;
+        right: 13px;
+        position: relative;
+
+    }
+  }
+ 
+/*---- Media Query para galaxy fold en Tienda----*/
+@media screen and (max-width: 280px){ 
+    .tienda-moto{
+        right: 15px;
+        position: relative;
+    }
+}
+
+
+/*------------Animacion de Moto----------*/
+.moto{
+    display: none;
+}
+@keyframes moto{
+    0% {
+        opacity: 0;
+        transform: translate(-10rem);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translate(10rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .moto{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 10%;
+        width: 50%;
+        animation-name: moto;
+        animation-delay: 0s;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+    
+}
+
+/*------------ fin Animacion de Moto----------*/

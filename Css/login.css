@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, rgba(249, 249, 249, 0.7), rgba(200, 201, 203, 0.7));
+}
+
+/*------------Inicio de Login-------------*/
+
+main .imagen-login{
+    background-image: url("/Imagenes/Login1.jpg ");
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+main .boton-enviar{
+    font-size: 20px;
+}
+/*------------Fin de Login-------------*/

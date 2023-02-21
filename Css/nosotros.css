@@ -1,0 +1,53 @@
+@import url(Style.css);
+
+.titulo{
+    color: rgb(99, 180, 193);
+    font-size: 40px;
+    
+        
+}
+
+.frase{
+    font-family: 'Montserrat', sans-serif; 
+    font-style:italic ;
+    font-weight: bolder; 
+    letter-spacing: 1px;
+    font-size: 27px;
+
+}
+
+.texto{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+
+.union{
+    font-weight:bolder;
+    font-size:30px;
+}
+
+
+.galeria {
+    margin-top: 20px;
+    border: black;
+  
+    background-color: rgb(99, 180, 193);
+
+}
+
+
+.galeria img:hover{
+    border: 5px solid whitesmoke
+   
+} 
+
+
+
+
+
+
+
+
+
+

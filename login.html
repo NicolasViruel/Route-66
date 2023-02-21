@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Imagenes/Imagen1.png">
+    <!--Icono de pagina-->
+    
+    <!--Estilos Css-->
+    <link rel="stylesheet" href="/Css/login.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/dc50344c01.js" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
+    <title>Route 66</title>
+</head>
+
+<body>
+
+    <!-----Inicio del Navbar----->
+    <header>
+        <div class="container-fluid mt-2">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="/Imagenes/Imagen1.png" alt="logo" width="200" class="logo">
+                    </a>
+                    <button class="navbar-toggler bg-info" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white text-decoration-none text-uppercase font-weight-bolder mx-2"
+                                    aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-decoration-none text-uppercase font-weight-bolder mx-2"
+                                    href="tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-decoration-none text-uppercase font-weight-bolder mx-2"
+                                    href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-decoration-none text-uppercase font-weight-bolder mx-2"
+                                    href="nosotros.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white text-decoration-none text-uppercase font-weight-bolder mx-2"
+                                    aria-current="page" href="galeria.html">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container d-none d-md-block">
+                <div class="row col-md-6 text-md-left col-lg-6 text-lg-left">
+                    <h1 class="text-white mt-5 my-4"><span class="text-white font-weight-bolder">Route 66</span></h1>
+                    <p class="text-white font-weight-bolder span"> Te da la posibilidad de acceder a tu primer rodado de
+                        la manera mas <span class="span">SENCILLA</span></p>
+                </div>
+                <form action="" class="text-white font-weight-bolder span text-md-center">¿ Queres conocer más ?
+                    <a href="/tienda.html" class="btn btn-info mb-4 btn-lg mt-3">Tienda</a>
+
+                </form>
+
+            </div>
+        </div>
+    </header>
+
+    <!-----Fin del Navbar----->
+
+    <!--Inicio del Login-->
+    <main>
+    
+        <div class="container bg-white my-5 w-75 rounded shadow">
+            <div class="row">
+                <!--Inicio de primera Columna-->
+                <div class="col">
+                    <img src="/Imagenes/Imagen1.png" alt="logo" width="80" class="mb-5">
+                    <div class="col-lg-12">
+                
+                        <h2 class="font-weight-bold text-center py-3 border-top border-bottom border-2 ">Bienvenido</h2>
+                
+                        <form action="#">
+                            <div class="mb-4 mt-4">
+                                <label for="email" class="form-check-label">Correo electrónico</label>
+                                <input type="email" class="form-control" placeholder="ejemplo@gmail.com" name="email" maxlength="30"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-check-label">Password</label>
+                                <input type="password" class="form-control" placeholder="Contraseña" name="password" minlength="8"
+                                    maxlength="12" required>
+                            </div>
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" name="conectar" class="form-check-input">
+                                <label for="conectar">Recordarme</label>
+                            </div>
+                
+                            <div class="btn-lg text-center">
+                                <button type="submit"
+                                    class="btn btn-info btn-lg w-100 font-weight-bolder boton-enviar">Ingresar</button>
+                            </div>
+                            <div class="d-flex justify-content-between my-3">
+                                <div>
+                                    <span><a href="#" data-toggle="modal" data-target="#exampleModal"
+                                            class="font-weight-bold text-decoration-none">Recuperar
+                                            contraseña</a></span>
+                                </div>
+                                <div>
+                                    <span>¿No tienes una cuenta? <a href="#" data-toggle="modal" data-target="#exampleModal2"
+                                            class="font-weight-bold text-decoration-none">Registrate</a></span>
+                                </div>
+                            </div>
+                        </form>
+                
+                        <!-- Inicio Redes Sociales-->
+                        <div class="container my-3 w-100">
+                            <div class="row text-center">
+                                <h3 class="col-12">Iniciar Sesíon</h3>
+                            </div>
+                            <div class="row justify-content-center">
+                                <!--Row para organizar 2 botones-->
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-info w-100 my-1 mx-2">
+                                        <a href="https://www.facebook.com/login/" class="text-decoration-none text-dark"
+                                            target="_blank">
+                                            <div class=" row align-content-center">
+                                                <!--Row para alinear img y texto-->
+                                                <div class="col-2 d-none d-md-block">
+                                                    <img src="/Imagenes/facebook-logo.png" class="mx-3" width="30" alt="facebook">
+                                                </div>
+                                                <div class="col-12 col-md-10 text-center font-weight-bolder">
+                                                    Facebook
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </button>
+                                    <!--Final de Primer Boton-->
+                
+                                    <button class="btn btn-outline-warning w-100 my-1 mx-2">
+                                        <a href="https://www.google.com/" class="text-decoration-none text-dark" target="_blank">
+                                            <div class=" row align-content-center">
+                                                <!--Row para alinear img y texto-->
+                                                <div class="col-2 d-none d-md-block">
+                                                    <img src="/Imagenes/google-logo.png" class="mx-3" width="30" alt="google">
+                                                </div>
+                                                <div class="col-12 col-md-10 text-center font-weight-bolder">
+                                                    Google
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </button>
+                                    <!--Final de Segundo Boton-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--Final Redes Sociales-->
+                    </div>
+                </div>
+                <!--Final primera Columna-->
+    
+                <!--Inicio Segunda Columna-->
+                <div class="d-none col-md-6 d-lg-block p-0">
+                    <div class=" imagen-login h-100">
+                        <div>
+                            <h2 class="text-dark text-center pt-3">Únete y cuenta tu experiencia</h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 text-center mt-5">
+                                <h1 class="font-weight-bolder text-info">VIAJA</h1>
+                                <h3 class="text-white">No para encontrarte</h3>
+                                <h2 class="font-weight-bolder text-info">A ti Mismo</h2>
+                                <h3 class="text-white">Sino para recordar</h3>
+                                <h2 class="font-weight-bolder text-dark">Quién has sido</h2>
+                                <h3 class="text-white">Todo el tiempo</h3>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <!--Final Segunda Columna-->
+            </div>
+        </div>
+    
+    </main>
+    <!--Fin del Login-->
+
+    <!--Inicio de Footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row bg-dark align-items-center">
+                <div class="col-md-4 col-sm-12 text-center">
+                    <img src="/Imagenes/Imagen1.png" alt="logo" width="200">
+                </div>
+
+                <div class="col-md-4 col-sm-12 text-center">
+                    <h5 class="mb-3 text-white font-weight-bolder mt-3">Nuestras redes Sociales</h5>
+                    <a href="https://www.facebook.com/login/"
+                        class="fa-brands fa-facebook redes text-center text-decoration-none mx-2 mt-2"
+                        target="_blank"></a>
+                    <a href="https://www.whatsapp.com/"
+                        class="fa-brands fa-whatsapp redes text-center text-decoration-none mx-2 mt-2"
+                        target="_blank"></a>
+                    <a href="https://twitter.com/i/flow/login"
+                        class="fa-brands fa-twitter redes text-center text-decoration-none mx-2 mt-2"
+                        target="_blank"></a>
+                    <a href="tel:+549-3813368181"
+                        class="fa-solid fa-phone redes text-center text-decoration-none mx-2 mt-2" target="_blank"></a>
+                    <a href="https://www.youtube.com/"
+                        class="fa-brands fa-youtube redes text-center text-decoration-none mx-2 mt-2"
+                        target="_blank"></a>
+                    <a href="https://www.instagram.com/accounts/login/?"
+                        class="fa-brands fa-instagram redes text-center text-decoration-none mx-2 mt-2"
+                        target="_blank"></a>
+                    <p class="mt-4 text-white font-weight-bolder border-bottom-2">Copyrigth 2022 © TODOS LOS DERECHOS
+                        RESERVADOS <span class="text-info">EQUIPO Nº4</span> </p>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <p class="text-white  text-center mt-2 mb-2">Los precios cotizados pueden variar sin previo aviso y no
+                        incluyen IVA - Factura A.
+                        Todas las imágenes y descripciones comerciales no son contractuales. Las descripciones de todos
+                        los productos y
+                        condiciones se encuentran sujetas a modificaciones sin previo aviso, pueden contener errores o
+                        pueden no contener
+                        todos los datos descriptivos. A los fines de obtener un asesoramiento completo e integral
+                        deberán concurrir al
+                        local.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="/404.html" class="text-center">Terminos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Fin de Footer-->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Recuperar Contraseña</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <h3 class="mb-2 text-center">Ingresa tu Email</h3>
+                    <div class="mb-4">
+                        <label for="email" class="form-check-label">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="ejemplo@gmail.com" name="email"
+                            maxlength="30" required>
+                    </div>
+                    <div>
+                        <p class="text-dark text-center font-weight-bolder">Te llegara un mail a tu correo para realizar
+                            los
+                            cambios</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger mb-2 btn-lg mt-2"
+                            data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-info mb-2 btn-lg mt-2">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Final Modal -->
+
+    <!--Modal 2-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <h3 class="mb-2 text-center">Ingresa tu Email</h3>
+                    <div class="mb-4">
+                        <label for="email" class="form-check-label">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="ejemplo@gmail.com" name="email"
+                            maxlength="30" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-check-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Contraseña" name="password"
+                            minlength="8" maxlength="12" required>
+                    </div>
+                    <div>
+                        <p class="text-dark text-center font-weight-bolder">Te llegara un mail a tu correo para
+                            confirmarlo</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger mb-2 btn-lg mt-2"
+                            data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-info mb-2 btn-lg mt-2">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Final Modal -->
+
+
+
+    <!--Declaracion Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+@import url(Style.css);
+#mensaje{
+    
+   max-width: 100%;
+}
+
+.empresa{
+    padding-top: 7rem;
+}
+
+.direccion{
+ 
+    width: 400px;
+    height: 400px;
+
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+   
+}
+
+
+.text-area{
+    resize: none;
+    
+}
+
+@media screen and (max-width: 394px){
+    .mapa{
+        display: none;
+        }
+}
+
+
